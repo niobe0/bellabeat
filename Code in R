@@ -1,0 +1,22 @@
+---
+title: "bellabeat_cleaning"
+output: html_document
+date: "2024-08-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load libraries
+```{r}
+library(readr)
+library(tidyverse)
+library(scales)
+```
+
+## Upload data files of daily activity
+```{r}
+march_dailyactivity <- read.csv("C:\\Users\\niobe\\Documents\\Portfolio\\bellabeat\\originals\\mturkfitbit_export_3.12.16-4.11.16\\Fitabase Data 3.12.16-4.11.16\\dailyActivity_merged.csv")
+april_dailyactivity <- read.csv("C:\\Users\\niobe\\Documents\\Portfolio\\bellabeat\\originals\\mturkfitbit_export_4.12.16-5.12.16\\Fitabase Data 4.12.16-5.12.16\\dailyActivity_merged.csv")
+```
